@@ -1,4 +1,3 @@
-# Devops-CICD-lab
 
 # DevOps CI/CD Lab with GitHub Actions & Pytest
 
@@ -27,3 +26,15 @@ This lab demonstrates how to set up a simple Continuous Integration (CI) pipelin
 ```bash
 pip install pytest
 pytest
+🚀 Technologies Used
+	•	GitHub Actions
+	•	Python 3.10
+	•	Pytest
+	•	YAML
+
+📸 Sample Screenshot
+
+(Add a screenshot of your passing workflow here if you want)
+
+👤 Author
+	•	Jamar – Aspiring DevOps / SRE Engineer
