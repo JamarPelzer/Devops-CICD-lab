@@ -1,42 +1,79 @@
+# 🔁 DevOps CI/CD Lab with GitHub Actions & Pytest
 
-# DevOps CI/CD Lab with GitHub Actions & Pytest
+This lab demonstrates how to set up a basic Continuous Integration (CI) pipeline using **GitHub Actions** to automatically run unit tests written with **pytest**. It's a foundational DevOps exercise meant to simulate the workflow of building, testing, and ensuring code reliability before deployment.
 
-This lab demonstrates how to set up a simple Continuous Integration (CI) pipeline using **GitHub Actions** to run automated tests with **pytest** on a Python application.
+---
 
-## 🔧 What I Built
+## 🛠️ What I Built
 
-- A basic Python function (`add`) inside `app.py`
-- A test file (`test_app.py`) with unit tests using `pytest`
-- A GitHub Actions workflow (`main.yml`) that:
+- A simple Python calculator with the following functions:
+  - `add(x, y)`
+  - `subtract(x, y)`
+  - `multiply(x, y)`
+  - `divide(x, y)`
+  - `exponent(x, y)`
+- Unit tests for all functions in `test_app.py` using **pytest**
+- A GitHub Actions workflow that:
   - Runs on every push to the `main` branch
-  - Sets up a Python environment
+  - Installs Python 3.10
+  - Sets up a virtual environment
   - Installs `pytest`
-  - Runs all tests automatically
+  - Runs tests automatically on GitHub’s CI infrastructure
 
-## 💡 What I Learned
+---
 
-- How to create and configure GitHub Actions workflows using YAML
-- How to write and run unit tests with `pytest`
-- How CI/CD pipelines detect errors before code is deployed
-- How to troubleshoot and fix broken pipelines
-- How to simulate real DevOps/SRE responsibilities in a practical way
+## 🚀 Technologies Used
+
+- **Python 3.10**
+- **Pytest**
+- **GitHub Actions**
+- **YAML**
+
+---
 
 ## 🧪 How to Run the Tests Locally
 
 ```bash
+# Optional: Set up virtual environment
+python -m venv venv
+.\venv\Scripts\Activate.ps1  # For PowerShell
+# or
+source venv/bin/activate  # For Linux/Mac
+
+# Install pytest
 pip install pytest
+
+# Run tests
 pytest
-```
-🚀 Technologies Used
-	•	GitHub Actions
-	•	Python 3.10
-	•	Pytest
-	•	YAML
+🧠 What I Learned
+How to create a Python application and write unit tests
 
-📸 Sample Screenshot
+How to use pytest to validate code logic
 
-(Add a screenshot of your passing workflow here if you want)
+How to set up GitHub Actions workflows using YAML
+
+How automated testing improves development workflows
+
+Real-world DevOps skills: CI/CD, automation, debugging broken pipelines
+
+📸 Screenshots
+
+
 
 👤 Author
+Jamar
+DevOps / SRE Engineer in Training
+“Make Every Day Count”
 
-Jamar – DevOps / SRE Engineer
+📂 Project Structure
+cpp
+Copy
+Edit
+.
+├── app.py
+├── test_app.py
+├── venv/
+├── requirements.txt (optional)
+└── .github/
+    └── workflows/
+        └── main.yml
