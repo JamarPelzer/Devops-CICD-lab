@@ -1,4 +1,4 @@
-from app import add, subtract, multiply, divide, exponent, modulo
+from math_app import add, subtract, multiply, divide, exponent, modulo
 import pytest
 
 def test_add():
