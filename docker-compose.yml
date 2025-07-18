@@ -1,0 +1,8 @@
+version: '3.8' 
+
+services:
+  math-api:
+    build: .
+    ports: 
+      - "5000:5000"
+    container_name: math_api_container 
